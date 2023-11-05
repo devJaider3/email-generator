@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Estilos Globales -->
+    <link rel="stylesheet" href="assets/css/global.min.css">
+    <!-- Script Index -->
+    <script src="index.js" type="module" defer></script>
+</head>
+
+<body class="container">
+    <div class="container">
+        <div>
+            <div class="btn-group type-emails flex-column flex-md-row" role="group">
+                <input type="radio" class="btn-check" name="type_email" id="aleatory_email" checked>
+                <label for="aleatory_email" class="btn btn-outline-danger">Correo Aleatorio</label>
+                <input type="radio" class="btn-check" name="type_email" id="human_email">
+                <label for="human_email" class="btn btn-outline-danger">Correo Humano</label>
+                <input type="radio" class="btn-check" name="type_email" id="custom_email">
+                <label for="custom_email" class="btn btn-outline-danger">Correo Personalizado</label>
+            </div>
+        </div>
+
+        <div id="form-container">
+        </div>
+    </div>
+    <hr>
+    <div class="text-center p-3 position-relative">
+        <div class="z-3 position-absolute top-0 end-0">
+            <button id="copy-emails" class="btn btn-warning">
+                <svg class="pointer" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                    <path
+                        d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
+                </svg>
+            </button>
+        </div>
+        <ul id="email-response" class="p-0">
+        </ul>
+    </div>
+
+    <footer class="fixed-bottom text-center">
+        <span class="copyright"><small>Derechos Reservados &copy; <a
+                    href="mailto:jaidermendoza02d@gmail.com">devJaider3</a></small></span>
+    </footer>
+</body>
+
+</html>
